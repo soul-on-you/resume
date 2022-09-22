@@ -1,0 +1,80 @@
+.App {
+  width: 100%;
+  padding: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.separator {
+  width: 100%;
+  max-width: 1980px;
+  height: 1px;
+  background-color: #a7a7a7;
+  margin: 40px 0;
+}
+
+.section {
+  flex: 1;
+  max-width: 1980px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section-title {
+  margin-right: 4rem;
+  min-width: 450px;
+}
+
+.section-title a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.section-title p {
+  color: #212121;
+  font-size: 18px;
+  margin: 0.5rem 0;
+}
+
+.section-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 1240px) {
+  .App {
+    padding: 90px;
+  }
+
+  .section-title {
+    margin-right: 0;
+    width: 300px;
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .App {
+    padding: 60px;
+  }
+
+  .section-title {
+    margin-right: 0;
+    width: 200px;
+    min-width: 200px;
+  }
+
+  .section-title a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .section-content p {
+    font-size: 14px;
+  }
+}
